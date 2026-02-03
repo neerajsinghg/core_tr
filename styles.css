@@ -60,18 +60,19 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
     z-index: 1000;
-    background: var(--glass-bg);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--glass-border);
+    padding: 10px 20px;
     transition: var(--transition-smooth);
+    background: rgba(10, 15, 30, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .navbar.scrolled {
+    padding: 8px 20px;
     background: rgba(10, 15, 30, 0.95);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -82,7 +83,7 @@ body {
 }
 
 .logo img {
-    height: 60px;
+    height: 45px;
     width: auto;
     max-width: 300px;
     transition: var(--transition-smooth);
