@@ -81,6 +81,17 @@ body {
     padding: 15px 20px;
 }
 
+.logo img {
+    height: 120px;
+    width: auto;
+    max-width: 250px;
+    transition: var(--transition-smooth);
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
 /* Text-based logo styles */
 .logo-text {
     display: flex;
