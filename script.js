@@ -238,4 +238,153 @@ window.addEventListener('load', () => {
 // ===================================
 console.log('%c🚀 Etechaix Solutions Pvt. Ltd.', 'color: #06b6d4; font-size: 24px; font-weight: bold;');
 console.log('%cDelivering cutting-edge development and AI-driven testing solutions', 'color: #94a3b8; font-size: 14px;');
-console.log('%cInterested in working with us? Contact us at info@etechaix.com', 'color: #3b82f6; font-size: 12px;');
+// ===================================
+// Mission Tabs Functionality
+// ===================================
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabContents = document.querySelectorAll('.mission-tab-content');
+
+if (tabBtns.length > 0) {
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all buttons and contents
+            tabBtns.forEach(b => b.classList.remove('active'));
+            tabContents.forEach(c => c.classList.remove('active'));
+
+            // Add active class to clicked button
+            btn.classList.add('active');
+
+            // Show corresponding content
+            const tabId = btn.getAttribute('data-tab');
+            const targetContent = document.getElementById(`${tabId}-content`);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+        });
+    });
+}
+
+// ===================================
+// Stats Counter Animation
+// ===================================
+const statsSection = document.querySelector('.stats-section');
+const counters = document.querySelectorAll('.counter');
+let started = false; // Function Started ? No
+
+if (statsSection && counters.length > 0) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= statsSection.offsetTop - 500) {
+            if (!started) {
+                counters.forEach((counter) => startCount(counter));
+            }
+            started = true;
+        }
+    });
+}
+
+function startCount(el) {
+    let target = +el.getAttribute('data-target'); // Get target value
+    // Handle float for ratings
+    let isFloat = target % 1 !== 0;
+    let count = 0;
+    let speed = 200; // Lower is slower
+    let step = target / speed;
+
+    let updateCount = () => {
+        count += step;
+
+        if (count < target) {
+            el.innerText = isFloat ? count.toFixed(1) : Math.ceil(count);
+            setTimeout(updateCount, 20);
+        } else {
+            el.innerText = target;
+        }
+    };
+    updateCount();
+}
+
+// ===================================
+// Services Slider Functionality
+// ===================================
+const track = document.querySelector('.services-slider-track');
+const slides = document.querySelectorAll('.service-slide-card');
+const nextBtn = document.querySelector('.slider-arrow.next');
+const prevBtn = document.querySelector('.slider-arrow.prev');
+const progressBar = document.querySelector('.slider-progress-bar');
+
+if (track && slides.length > 0) {
+    let index = 0;
+
+    function getSlidesPerView() {
+        if (window.innerWidth <= 576) return 1;
+        if (window.innerWidth <= 992) return 2;
+        if (window.innerWidth <= 1200) return 3;
+        return 4;
+    }
+
+    function updateSlider() {
+        const slideToDisplay = getSlidesPerView();
+        const maxIndex = slides.length - slideToDisplay;
+
+        if (index > maxIndex) index = maxIndex;
+        if (index < 0) index = 0;
+
+        const slideWidth = slides[0].offsetWidth + 30; // slide width + gap
+        track.style.transform = `translateX(-${index * slideWidth}px)`;
+
+        // Update progress bar
+        const progress = ((index + slideToDisplay) / slides.length) * 100;
+        progressBar.style.width = `${progress}%`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+        const slideToDisplay = getSlidesPerView();
+        const maxIndex = slides.length - slideToDisplay;
+
+        if (index < maxIndex) {
+            index++;
+        } else {
+            index = 0; // Loop back
+        }
+        updateSlider();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        const slideToDisplay = getSlidesPerView();
+        const maxIndex = slides.length - slideToDisplay;
+
+        if (index > 0) {
+            index--;
+        } else {
+            index = maxIndex; // Go to end
+        }
+        updateSlider();
+    });
+
+    // Auto Scrolling
+    let autoScroll = setInterval(() => {
+        nextBtn.click();
+    }, 5000);
+
+    // Pause on hover
+    const sliderContainer = document.querySelector('.services-slider-container');
+    if (sliderContainer) {
+        sliderContainer.addEventListener('mouseenter', () => clearInterval(autoScroll));
+        sliderContainer.addEventListener('mouseleave', () => {
+            clearInterval(autoScroll); // Clear just in case
+            autoScroll = setInterval(() => {
+                nextBtn.click();
+            }, 5000);
+        });
+    }
+
+    // Handle Resize
+    window.addEventListener('resize', () => {
+        index = 0; // Reset to avoid position errors
+        updateSlider();
+    });
+
+    // Initial call
+    updateSlider();
+}
+

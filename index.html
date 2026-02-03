@@ -20,6 +20,9 @@
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -65,14 +68,14 @@
             <div class="hero-overlay"></div>
         </div>
         <div class="container hero-content">
-            <h1 class="hero-title animate-fade-in">
+            <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000">
                 Delivering Cutting-Edge Development and<br>
                 <span class="gradient-text">AI-Driven Testing Solutions</span>
             </h1>
-            <p class="hero-subtitle animate-fade-in-delay">
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                 Where Innovation Meets Excellence
             </p>
-            <a href="#about" class="cta-button animate-fade-in-delay-2">
+            <a href="#about" class="cta-button" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                 About Us
                 <i class="fas fa-arrow-right"></i>
             </a>
@@ -225,76 +228,262 @@
         </div>
     </section>
 
-    <!-- Mission & Vision -->
-    <section class="mission-vision" id="mission">
-        <div class="container">
-            <div class="mv-grid">
-                <div class="mv-card" data-aos="fade-right">
-                    <div class="mv-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3 class="mv-title">Our Mission</h3>
-                    <p class="mv-text">
-                        We are committed to providing outstanding software solutions tailored to our clients' specific
-                        needs.
-                        Our goal is to help them excel in a competitive market and reach their strategic goals. By
-                        understanding
-                        their unique challenges, we deliver innovative and effective solutions. We prioritize quality,
-                        efficiency,
-                        and client satisfaction in every project.
-                    </p>
-                </div>
 
-                <div class="mv-card" data-aos="fade-left">
-                    <div class="mv-icon">
-                        <i class="fas fa-eye"></i>
+
+    <!-- About Company Section -->
+    <section class="about-company-section" id="about-company">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-column" data-aos="fade-right">
+                    <div class="about-image-wrapper">
+                        <div class="dots-layer dots-top-right"></div>
+                        <div class="dots-layer dots-bottom-left"></div>
+                        <img src="images/about-company.jpg" alt="Team working together" class="about-img">
                     </div>
-                    <h3 class="mv-title">Our Vision</h3>
-                    <p class="mv-text">
-                        Our mission is to revolutionize industries with disruptive software technologies. We aim to
-                        redefine
-                        possibilities and inspire innovation, driving forward the future of digital transformation. By
-                        pushing
-                        the boundaries, we create solutions that set new standards. Our commitment is to lead the way in
-                        technological advancements.
-                    </p>
+                </div>
+                <div class="about-content-column" data-aos="fade-left">
+                    <div class="about-badge">About Our Company</div>
+                    <h2 class="about-title">Etechaix <span class="highlight-green">Solutions</span></h2>
+                    <div class="about-text-wrapper">
+                        <p class="about-text">
+                            Etechaix Solutions is a leading IT consulting company dedicated to providing innovative
+                            solutions and expert guidance to businesses worldwide. With our deep industry knowledge and
+                            technical expertise, we empower organizations to navigate the ever-changing digital
+                            landscape and achieve their strategic goals.
+                        </p>
+                        <p class="about-text">
+                            We understand that technology is a critical driver of business success. Our mission is to
+                            help businesses harness the power of technology to drive growth, optimize operations, and
+                            deliver exceptional customer experiences. We offer a comprehensive range of software
+                            consulting services tailored to the unique needs of each client.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Industries Section -->
-    <section class="industries" id="industries">
+    <!-- Services Slider Section (Formerly Industries) -->
+    <section class="services-slider-section" id="services-slider">
+        <div class="slider-bg-overlay"></div>
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Industries We Serve</h2>
-                <p class="section-subtitle">Delivering specialized solutions across diverse sectors</p>
+            <div class="section-header text-center" data-aos="fade-up">
+                <div class="services-badge">~ Our Awesome Services ~</div>
             </div>
 
-            <div class="industries-grid">
-                <div class="industry-card" data-aos="zoom-in">
-                    <i class="fas fa-laptop-code"></i>
-                    <h4>Information Technology</h4>
+            <div class="services-slider-container">
+                <div class="services-slider-track">
+                    <!-- IT Consulting -->
+                    <div class="service-slide-card">
+                        <div class="diamond-icon-wrapper">
+                            <div class="diamond-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                        </div>
+                        <h3 class="slide-card-title">IT Consulting</h3>
+                        <div class="slide-card-line"></div>
+                        <p class="slide-card-text">
+                            IT consulting optimizes technology strategies for enhanced business performance.
+                        </p>
+                    </div>
+
+                    <!-- Cyber Security -->
+                    <div class="service-slide-card">
+                        <div class="diamond-icon-wrapper">
+                            <div class="diamond-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                        </div>
+                        <h3 class="slide-card-title">Cyber Security</h3>
+                        <div class="slide-card-line"></div>
+                        <p class="slide-card-text">
+                            Cyber security safeguards systems and data against digital threats and breaches.
+                        </p>
+                    </div>
+
+                    <!-- Digital Marketing -->
+                    <div class="service-slide-card">
+                        <div class="diamond-icon-wrapper">
+                            <div class="diamond-icon">
+                                <i class="fas fa-drafting-compass"></i>
+                            </div>
+                        </div>
+                        <h3 class="slide-card-title">Digital Marketing</h3>
+                        <div class="slide-card-line"></div>
+                        <p class="slide-card-text">
+                            Digital marketing boosts the online presence through targeted campaigns and analytics.
+                        </p>
+                    </div>
+
+                    <!-- Power BI -->
+                    <div class="service-slide-card">
+                        <div class="diamond-icon-wrapper">
+                            <div class="diamond-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                        </div>
+                        <h3 class="slide-card-title">Power BI</h3>
+                        <div class="slide-card-line"></div>
+                        <p class="slide-card-text">
+                            Power BI transforms data into interactive, insightful visualizations and reports.
+                        </p>
+                    </div>
+
+                    <!-- DevOps Consulting -->
+                    <div class="service-slide-card">
+                        <div class="diamond-icon-wrapper">
+                            <div class="diamond-icon">
+                                <i class="fas fa-infinity"></i>
+                            </div>
+                        </div>
+                        <h3 class="slide-card-title">DevOps Consulting</h3>
+                        <div class="slide-card-line"></div>
+                        <p class="slide-card-text">
+                            DevOps consulting optimizes software delivery with streamlined processes and automation.
+                        </p>
+                    </div>
+
+                    <!-- Medical Billing -->
+                    <div class="service-slide-card">
+                        <div class="diamond-icon-wrapper">
+                            <div class="diamond-icon">
+                                <i class="fas fa-notes-medical"></i>
+                            </div>
+                        </div>
+                        <h3 class="slide-card-title">Medical Billing</h3>
+                        <div class="slide-card-line"></div>
+                        <p class="slide-card-text">
+                            Medical Billing ensures accurate healthcare billing and documentation compliance.
+                        </p>
+                    </div>
                 </div>
-                <div class="industry-card" data-aos="zoom-in" data-aos-delay="100">
-                    <i class="fas fa-truck"></i>
-                    <h4>Transportation</h4>
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="slider-controls-wrapper">
+                <button class="slider-arrow prev" aria-label="Previous slide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-progress-container">
+                    <div class="slider-progress-bar"></div>
                 </div>
-                <div class="industry-card" data-aos="zoom-in" data-aos-delay="200">
-                    <i class="fas fa-heartbeat"></i>
-                    <h4>Healthcare</h4>
+                <button class="slider-arrow next" aria-label="Next slide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" id="stats">
+        <div class="stats-overlay"></div>
+        <div class="container stats-content-wrapper">
+            <h2 class="stats-headline" data-aos="fade-up">We develops strategic software solutions for businesses.</h2>
+
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                    <h3 class="stat-number"><span class="counter" data-target="930">0</span>+</h3>
+                    <p class="stat-label">Project Done</p>
                 </div>
-                <div class="industry-card" data-aos="zoom-in" data-aos-delay="300">
-                    <i class="fas fa-shopping-cart"></i>
-                    <h4>Retail & Commerce</h4>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                    <h3 class="stat-number"><span class="counter" data-target="780">0</span>+</h3>
+                    <p class="stat-label">Happy Clients</p>
                 </div>
-                <div class="industry-card" data-aos="zoom-in" data-aos-delay="400">
-                    <i class="fas fa-film"></i>
-                    <h4>Media & Entertainment</h4>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="stat-number"><span class="counter" data-target="510">0</span>+</h3>
+                    <p class="stat-label">Feedback's</p>
                 </div>
-                <div class="industry-card" data-aos="zoom-in" data-aos-delay="500">
-                    <i class="fas fa-chart-pie"></i>
-                    <h4>Finance</h4>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                    <h3 class="stat-number"><span class="counter" data-target="4.6">0</span>+</h3>
+                    <p class="stat-label">Customer rating</p>
+                </div>
+            </div>
+
+            <p class="stats-footer-text" data-aos="fade-up" data-aos-delay="500">
+                You have better things to do than worry about IT for your small business.
+                <a href="#contact" class="stats-link">Let's Discuss about Project.</a>
+            </p>
+        </div>
+        <!-- Decorative Elements -->
+        <div class="stats-decoration dots-bg"></div>
+        <div class="stats-decoration curve-bg"></div>
+    </section>
+
+    <!-- Tabbed Section: Mission, Vision, About -->
+    <section class="mission-tabs-section" id="mission-tabs">
+        <div class="container">
+            <!-- Tab Headers -->
+            <div class="mission-tabs-header" data-aos="fade-up">
+                <button class="tab-btn active" data-tab="mission">Our Mission</button>
+                <button class="tab-btn" data-tab="vision">Our Vision</button>
+                <button class="tab-btn" data-tab="about">About US</button>
+            </div>
+
+            <!-- Mission Tab Content -->
+            <div class="mission-tab-content active" id="mission-content">
+                <div class="mission-highlight-grid">
+                    <div class="mission-image-wrapper" data-aos="fade-right">
+                        <div class="dotted-layer"></div>
+                        <img src="images/mission-team.jpg" alt="Our Mission">
+                    </div>
+                    <div class="mission-content" data-aos="fade-left">
+                        <h5 class="mission-subtitle">Etechaix Solutions</h5>
+                        <h2 class="mission-title">Our Mission</h2>
+                        <p class="mission-text">
+                            We are committed to providing outstanding software solutions tailored to our clients'
+                            specific
+                            needs. Our goal is to help them excel in a competitive market and reach their strategic
+                            goals.
+                            By understanding their unique challenges, we deliver innovative and effective solutions.
+                            We prioritize quality, efficiency, and client satisfaction in every project. Partner with us
+                            to
+                            stay ahead and succeed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision Tab Content -->
+            <div class="mission-tab-content" id="vision-content">
+                <div class="mission-highlight-grid">
+                    <div class="mission-image-wrapper">
+                        <div class="dotted-layer"></div>
+                        <img src="images/vision-team.jpg" alt="Our Vision">
+                    </div>
+                    <div class="mission-content">
+                        <h5 class="mission-subtitle">Corefront Technologies</h5> <!-- Matching screenshot subtitle -->
+                        <h2 class="mission-title">Our Vision</h2>
+                        <p class="mission-text">
+                            .<br>
+                            Our mission is to revolutionize industries with disruptive software technologies. We aim to
+                            redefine possibilities and inspire innovation, driving forward the future of digital
+                            transformation. By pushing the boundaries, we create solutions that set new standards.
+                            Our commitment is to lead the way in technological advancements. Join us in shaping the
+                            future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Tab Content -->
+            <div class="mission-tab-content" id="about-content">
+                <div class="mission-highlight-grid">
+                    <div class="mission-image-wrapper">
+                        <div class="dotted-layer"></div>
+                        <img src="images/about-team.jpg" alt="About Us">
+                    </div>
+                    <div class="mission-content">
+                        <h5 class="mission-subtitle">Etechaix Solutions</h5>
+                        <h2 class="mission-title">About US</h2>
+                        <p class="mission-text">
+                            Etechaix Solutions Pvt. Ltd. is a leading IT solutions company dedicated to providing
+                            innovative development and AI-driven testing solutions to businesses worldwide. With our
+                            deep
+                            industry knowledge and technical expertise, we empower organizations to navigate the
+                            ever-changing digital landscape and achieve their strategic goals. We believe in building
+                            long-lasting partnerships based on trust and excellence.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -404,7 +593,16 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+    </script>
 </body>
 
 </html>
