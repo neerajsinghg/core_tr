@@ -82,9 +82,9 @@ body {
 }
 
 .logo img {
-    height: 120px;
+    height: 60px;
     width: auto;
-    max-width: 250px;
+    max-width: 300px;
     transition: var(--transition-smooth);
 }
 

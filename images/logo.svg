@@ -1,0 +1,37 @@
+<svg width="450" height="100" viewBox="0 0 450 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad_brand" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+        </linearGradient>
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    
+    <!-- Tech Abstract Icon -->
+    <g transform="translate(10, 15)">
+        <!-- Hexagon Shape -->
+        <path d="M25 10 L55 10 L70 35 L55 60 L25 60 L10 35 Z" stroke="url(#grad_brand)" stroke-width="3" fill="none" opacity="0.8"/>
+        
+        <!-- Internal Connections -->
+        <path d="M25 10 L40 35 L55 60" stroke="#06b6d4" stroke-width="1.5" opacity="0.6"/>
+        <path d="M55 10 L40 35 L25 60" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
+        
+        <!-- Nodes -->
+        <circle cx="10" cy="35" r="3" fill="#06b6d4" />
+        <circle cx="70" cy="35" r="3" fill="#3b82f6" />
+        <circle cx="40" cy="35" r="6" fill="url(#grad_brand)" filter="url(#glow)"/>
+    </g>
+    
+    <!-- Company Name -->
+    <text x="90" y="50" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="800" font-size="42" fill="white" letter-spacing="1">ETECHAIX</text>
+    <text x="305" y="50" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="300" font-size="42" fill="#06b6d4" letter-spacing="1">SOLUTIONS</text>
+    
+    <!-- Tagline -->
+    <text x="92" y="75" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="500" font-size="14" fill="#94a3b8" letter-spacing="4.5">AI-DRIVEN TESTING</text>
+</svg>
