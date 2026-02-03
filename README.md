@@ -11,7 +11,16 @@ A modern, professional IT consulting website featuring premium design, smooth an
 - **Interactive Elements**: 3D tilt effects, hover animations, smooth scroll navigation
 - **Contact Form**: Functional contact and newsletter subscription forms
 
+## 🌐 Live Demo
+
+**Live Website**: <https://neerajsinghg.github.io/core_tr/>
+
+> [!NOTE]
+> To enable the live demo, follow the instructions in [HOSTING.md](HOSTING.md) to set up GitHub Pages.
+
 ## 🚀 Quick Start
+
+### View Locally
 
 1. Clone the repository:
 
@@ -99,6 +108,28 @@ Replace files in the `images/` folder with your own assets.
 - **Desktop**: 1200px+
 - **Tablet**: 768px - 1199px
 - **Mobile**: < 768px
+
+## 🌐 Hosting & Deployment
+
+This website is hosted on **GitHub Pages** for free!
+
+**Live URL**: <https://neerajsinghg.github.io/core_tr/>
+
+### Enable GitHub Pages
+
+For detailed instructions on hosting your website publicly, see [HOSTING.md](HOSTING.md).
+
+**Quick Steps**:
+
+1. Go to your repository settings
+2. Navigate to "Pages" in the sidebar
+3. Select `main` branch and `/ (root)` folder
+4. Click Save
+5. Your site will be live at: <https://neerajsinghg.github.io/core_tr/>
+
+### Automatic Deployments
+
+Every push to the `main` branch automatically updates the live website!
 
 ## 🌐 Browser Support
 
