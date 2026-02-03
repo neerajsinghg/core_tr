@@ -1,12 +1,14 @@
-# Corefront Technologies Website
+# Etechaix Solutions Pvt. Ltd
 
-A modern, professional IT consulting website featuring premium design, smooth animations, and comprehensive service offerings.
+A modern, professional IT solutions website featuring premium design, AI-driven testing solutions, and cutting-edge development services.
 
 ## 🌟 Features
 
 - **Premium Design**: Dark theme with glassmorphism effects and gradient animations
 - **Fully Responsive**: Mobile-first design that works on all devices
 - **Smooth Animations**: Scroll-triggered animations and parallax effects
+- **AI-Driven Testing**: Specialized in AI-powered testing solutions
+- **8 Service Offerings**: Medical Billing, IT Consulting, Cyber Security, Digital Marketing, Power BI, DevOps, Blockchain, Medical Coding
 - **8 Service Offerings**: Medical Billing, IT Consulting, Cyber Security, Digital Marketing, Power BI, DevOps, Blockchain, Medical Coding
 - **Interactive Elements**: 3D tilt effects, hover animations, smooth scroll navigation
 - **Contact Form**: Functional contact and newsletter subscription forms
@@ -144,7 +146,7 @@ This project is open source and available for personal and commercial use.
 
 ## 👨‍💻 Author
 
-Created with ❤️ for Corefront Technologies
+Created with ❤️ for Etechaix Solutions Pvt. Ltd.
 
 ---
 
