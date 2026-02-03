@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Corefront Technologies - Leading IT consulting company providing innovative software solutions, cyber security, digital marketing, and more.">
+    <title>Corefront Technologies || Home</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Corefront Technologies Logo">
+            </div>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#services">Cyber Security</a></li>
+                        <li><a href="#services">IT Consultation</a></li>
+                        <li><a href="#services">Digital Marketing</a></li>
+                        <li><a href="#services">Blockchain</a></li>
+                        <li><a href="#services">Medical Coding</a></li>
+                        <li><a href="#services">Medical Billing</a></li>
+                        <li><a href="#services">Power BI</a></li>
+                        <li><a href="#services">DevOps Consulting</a></li>
+                    </ul>
+                </li>
+                <li><a href="#industries" class="nav-link">Industries</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <img src="images/hero-bg.png" alt="Technology Background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1 class="hero-title animate-fade-in">
+                We Deliver Cutting Edge<br>
+                <span class="gradient-text">Development Services</span>
+            </h1>
+            <p class="hero-subtitle animate-fade-in-delay">
+                Where Innovation Meets Excellence
+            </p>
+            <a href="#about" class="cta-button animate-fade-in-delay-2">
+                About Us
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Corefront Technologies</h2>
+                <p class="section-subtitle">We develop strategic software solutions for businesses</p>
+            </div>
+            
+            <div class="about-content">
+                <p class="about-text">
+                    Corefront Technologies is a leading IT consulting company dedicated to providing innovative solutions 
+                    and expert guidance to businesses worldwide. With our deep industry knowledge and technical expertise, 
+                    we empower organizations to navigate the ever-changing digital landscape and achieve their strategic goals.
+                </p>
+                <p class="about-text">
+                    We understand that technology is a critical driver of business success. Our mission is to help businesses 
+                    harness the power of technology to drive growth, optimize operations, and deliver exceptional customer experiences. 
+                    We offer a comprehensive range of software consulting services tailored to the unique needs of each client.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive IT solutions for your business needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Medical Billing -->
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <img src="images/medical-billing.png" alt="Medical Billing">
+                    </div>
+                    <h3 class="service-title">Medical Billing</h3>
+                    <p class="service-description">
+                        Streamline your healthcare revenue cycle with our expert medical billing services and solutions.
+                    </p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- IT Consulting -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <img src="images/it-consulting.png" alt="IT Consulting">
+                    </div>
+                    <h3 class="service-title">IT Consulting</h3>
+                    <p class="service-description">
+                        Strategic IT guidance to help your business leverage technology for maximum impact and growth.
+                    </p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Cyber Security -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <img src="images/cyber-security.png" alt="Cyber Security">
+                    </div>
+                    <h3 class="service-title">Cyber Security</h3>
+                    <p class="service-description">
+                        Protect your digital assets with comprehensive security solutions and threat prevention strategies.
+                    </p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <img src="images/digital-marketing.png" alt="Digital Marketing">
+                    </div>
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <p class="service-description">
+                        Amplify your brand presence and reach your target audience with data-driven marketing strategies.
+                    </p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Power BI -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">Power BI</h3>
+                    <p class="service-description">
+                        Transform your data into actionable insights with powerful business intelligence and analytics.
+                    </p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- DevOps Consulting -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3 class="service-title">DevOps Consulting</h3>
+                    <p class="service-description">
+                        Accelerate software delivery with streamlined DevOps practices and automation solutions.
+                    </p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Blockchain -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3 class="service-title">Blockchain</h3>
+                    <p class="service-description">
+                        Leverage distributed ledger technology to build secure, transparent, and decentralized solutions.
+                    </p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Medical Coding -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3 class="service-title">Medical Coding</h3>
+                    <p class="service-description">
+                        Accurate and compliant medical coding services to optimize healthcare documentation and billing.
+                    </p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision" id="mission">
+        <div class="container">
+            <div class="mv-grid">
+                <div class="mv-card" data-aos="fade-right">
+                    <div class="mv-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="mv-title">Our Mission</h3>
+                    <p class="mv-text">
+                        We are committed to providing outstanding software solutions tailored to our clients' specific needs. 
+                        Our goal is to help them excel in a competitive market and reach their strategic goals. By understanding 
+                        their unique challenges, we deliver innovative and effective solutions. We prioritize quality, efficiency, 
+                        and client satisfaction in every project.
+                    </p>
+                </div>
+
+                <div class="mv-card" data-aos="fade-left">
+                    <div class="mv-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="mv-title">Our Vision</h3>
+                    <p class="mv-text">
+                        Our mission is to revolutionize industries with disruptive software technologies. We aim to redefine 
+                        possibilities and inspire innovation, driving forward the future of digital transformation. By pushing 
+                        the boundaries, we create solutions that set new standards. Our commitment is to lead the way in 
+                        technological advancements.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="industries" id="industries">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Industries We Serve</h2>
+                <p class="section-subtitle">Delivering specialized solutions across diverse sectors</p>
+            </div>
+            
+            <div class="industries-grid">
+                <div class="industry-card" data-aos="zoom-in">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Information Technology</h4>
+                </div>
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-truck"></i>
+                    <h4>Transportation</h4>
+                </div>
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-heartbeat"></i>
+                    <h4>Healthcare</h4>
+                </div>
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h4>Retail & Commerce</h4>
+                </div>
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-film"></i>
+                    <h4>Media & Entertainment</h4>
+                </div>
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="500">
+                    <i class="fas fa-chart-pie"></i>
+                    <h4>Finance</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your project and bring your vision to life</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@corefront-tech.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Tech Street, Innovation City</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        Send Message
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Corefront Technologies</h3>
+                    <p>Empowering businesses with innovative technology solutions.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Cyber Security</a></li>
+                        <li><a href="#services">IT Consulting</a></li>
+                        <li><a href="#services">Digital Marketing</a></li>
+                        <li><a href="#services">DevOps</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Corefront Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
